@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/content
+END
+CategoryServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/content/CategoryServlet.java
+END
+StoryServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/content/StoryServlet.java
+END
+SubCategoryServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/content/SubCategoryServlet.java
+END
+CategoryListServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/content/CategoryListServlet.java
+END

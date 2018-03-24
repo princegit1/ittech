@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto
+END
+RelatedContentDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/RelatedContentDTO.java
+END
+StoryListDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/StoryListDTO.java
+END
+StoryDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/StoryDTO.java
+END
+CommentDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/CommentDTO.java
+END
+StaticContentDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/StaticContentDTO.java
+END
+FeedbackDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/FeedbackDTO.java
+END
+ContentListDTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/projects/!svn/ver/14/site/src/com/itgd/education/dto/ContentListDTO.java
+END

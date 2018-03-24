@@ -1,0 +1,215 @@
+package com.itgd.dto;
+
+public class ContentChunkDTO {
+	private int id;
+	private String title;
+	private String shortDescription;
+	private String smallImage;
+	private String mediumImage;
+	private String kickerImage;
+	private String kickerImageAltText;
+	private String largeImage;
+	private String largeImageAltText;
+	private String extraLargeImage;
+	private String createdDate;
+	private String contentURL;
+	private String primaryCategory;
+	private int primaryCategoryLength;
+	private String contentDisplayColor;
+	private int isExternalURL;
+	private int sectionId;
+	private String sectionTitle;
+	private String sectionDisplayTitle;
+	private String sectionURL;
+	private int categoryId;
+	private String categoryTitle;
+	private String categoryDisplayTitle;
+	private String categoryURL;
+	private int currentCategoryId;
+	private String currentCategoryTitle;
+	private String currentCategoryURL;
+	private String createddateYYMMDD;
+	private String content_type_tag;
+	private int photoCount;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getShortDescription() {
+		return shortDescription;
+	}
+	public void setShortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
+	}
+	public String getSmallImage() {
+		return smallImage;
+	}
+	public void setSmallImage(String smallImage) {
+		this.smallImage = smallImage;
+	}
+	public String getKickerImage() {
+		return kickerImage;
+	}
+	public void setKickerImage(String kickerImage) {
+		this.kickerImage = kickerImage;
+	}
+	public String getKickerImageAltText() {
+		return kickerImageAltText;
+	}
+	public void setKickerImageAltText(String kickerImageAltText) {
+		this.kickerImageAltText = kickerImageAltText;
+	}
+	public String getLargeImage() {
+		return largeImage;
+	}
+	public void setLargeImage(String largeImage) {
+		this.largeImage = largeImage;
+	}
+	public String getLargeImageAltText() {
+		return largeImageAltText;
+	}
+	public void setLargeImageAltText(String largeImageAltText) {
+		this.largeImageAltText = largeImageAltText;
+	}
+	public String getExtraLargeImage() {
+		return extraLargeImage;
+	}
+	public void setExtraLargeImage(String extraLargeImage) {
+		this.extraLargeImage = extraLargeImage;
+	}
+	public String getCreatedDate() {
+		return createdDate;
+	}
+	public void setCreatedDate(String createdDate) {
+		this.createdDate = createdDate;
+	}
+	public String getContentURL() {
+		return contentURL;
+	}
+	public void setContentURL(String contentURL) {
+		this.contentURL = contentURL;
+	}
+	public String getPrimaryCategory() {
+		return primaryCategory;
+	}
+	public void setPrimaryCategory(String primaryCategory) {
+		this.primaryCategory = primaryCategory;
+	}
+	public int getPrimaryCategoryLength() {
+		return primaryCategoryLength;
+	}
+	public void setPrimaryCategoryLength(int primaryCategoryLength) {
+		this.primaryCategoryLength = primaryCategoryLength;
+	}
+	public String getContentDisplayColor() {
+		return contentDisplayColor;
+	}
+	public void setContentDisplayColor(String contentDisplayColor) {
+		this.contentDisplayColor = contentDisplayColor;
+	}
+	public int getIsExternalURL() {
+		return isExternalURL;
+	}
+	public void setIsExternalURL(int isExternalURL) {
+		this.isExternalURL = isExternalURL;
+	}
+	public int getSectionId() {
+		return sectionId;
+	}
+	public void setSectionId(int sectionId) {
+		this.sectionId = sectionId;
+	}
+	public String getSectionTitle() {
+		return sectionTitle;
+	}
+	public void setSectionTitle(String sectionTitle) {
+		this.sectionTitle = sectionTitle;
+	}
+	public String getSectionURL() {
+		return sectionURL;
+	}
+	public void setSectionURL(String sectionURL) {
+		this.sectionURL = sectionURL;
+	}
+	public int getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+	public String getCategoryTitle() {
+		return categoryTitle;
+	}
+	public void setCategoryTitle(String categoryTitle) {
+		this.categoryTitle = categoryTitle;
+	}
+	public String getCategoryURL() {
+		return categoryURL;
+	}
+	public void setCategoryURL(String categoryURL) {
+		this.categoryURL = categoryURL;
+	}
+	public int getCurrentCategoryId() {
+		return currentCategoryId;
+	}
+	public void setCurrentCategoryId(int currentCategoryId) {
+		this.currentCategoryId = currentCategoryId;
+	}
+	public String getCurrentCategoryTitle() {
+		return currentCategoryTitle;
+	}
+	public void setCurrentCategoryTitle(String currentCategoryTitle) {
+		this.currentCategoryTitle = currentCategoryTitle;
+	}
+	public String getCurrentCategoryURL() {
+		return currentCategoryURL;
+	}
+	public void setCurrentCategoryURL(String currentCategoryURL) {
+		this.currentCategoryURL = currentCategoryURL;
+	}
+	public String getMediumImage() {
+		return mediumImage;
+	}
+	public void setMediumImage(String mediumImage) {
+		this.mediumImage = mediumImage;
+	}
+	public String getCreateddateYYMMDD() {
+		return createddateYYMMDD;
+	}
+	public void setCreateddateYYMMDD(String createddateYYMMDD) {
+		this.createddateYYMMDD = createddateYYMMDD;
+	}
+	public String getContent_type_tag() {
+		return content_type_tag;
+	}
+	public void setContent_type_tag(String contentTypeTag) {
+		content_type_tag = contentTypeTag;
+	}
+	public String getSectionDisplayTitle() {
+		return sectionDisplayTitle;
+	}
+	public void setSectionDisplayTitle(String sectionDisplayTitle) {
+		this.sectionDisplayTitle = sectionDisplayTitle;
+	}
+	public String getCategoryDisplayTitle() {
+		return categoryDisplayTitle;
+	}
+	public void setCategoryDisplayTitle(String categoryDisplayTitle) {
+		this.categoryDisplayTitle = categoryDisplayTitle;
+	}
+	public int getPhotoCount() {
+		return photoCount;
+	}
+	public void setPhotoCount(int photoCount) {
+		this.photoCount = photoCount;
+	}
+} 

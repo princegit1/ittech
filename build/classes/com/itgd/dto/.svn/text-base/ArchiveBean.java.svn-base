@@ -1,0 +1,374 @@
+package com.itgd.dto;
+
+import java.io.Serializable;
+
+public class ArchiveBean
+    implements Serializable
+{
+
+    private String coverImage;
+    private int issueId;
+    private String issueDate;
+    private int issueCount;
+    private int archivearticleid;
+    private int archivesectionid;
+    private String archivesectionname;
+    private String archivesectionbyline;
+    private String archivetitle;
+    private String archivekicker;
+    private String archivecover;
+    private String archivedate;
+    private String coverbyline;
+    private String coverKicker;
+    private String covertitle;
+    private int coverartid;
+    private int SuppArtid;
+    private int SuppId;
+    private String Suppname;
+    private String SuppTitle;
+    private String SuppKicker;
+    private String SuppByline;
+    private String SuppImage;
+    private String sefUrl;
+    private String kickerImage;
+    private String kickerImageAltText;
+    private String largeKickerImage;
+    private String smallImage;
+    private String largeKickerImageCaption;
+    private int contentHighlighted;
+    private int contentLocked;
+    private String extraLargeKickerImage;
+    private String contentUrl;
+
+    public ArchiveBean()
+    {
+    }
+
+    public String getSuppImage()
+    {
+        return SuppImage;
+    }
+
+    public void setSuppImage(String suppImage)
+    {
+        SuppImage = suppImage;
+    }
+
+    public int getSuppArtid()
+    {
+        return SuppArtid;
+    }
+
+    public void setSuppArtid(int suppArtid)
+    {
+        SuppArtid = suppArtid;
+    }
+
+    public int getSuppId()
+    {
+        return SuppId;
+    }
+
+    public void setSuppId(int suppId)
+    {
+        SuppId = suppId;
+    }
+
+    public String getSuppname()
+    {
+        return Suppname;
+    }
+
+    public void setSuppname(String suppname)
+    {
+        Suppname = suppname;
+    }
+
+    public String getSuppTitle()
+    {
+        return SuppTitle;
+    }
+
+    public void setSuppTitle(String suppTitle)
+    {
+        SuppTitle = suppTitle;
+    }
+
+    public String getSuppKicker()
+    {
+        return SuppKicker;
+    }
+
+    public void setSuppKicker(String suppKicker)
+    {
+        SuppKicker = suppKicker;
+    }
+
+    public String getSuppByline()
+    {
+        return SuppByline;
+    }
+
+    public void setSuppByline(String suppByline)
+    {
+        SuppByline = suppByline;
+    }
+
+    public String getArchivecover()
+    {
+        return archivecover;
+    }
+
+    public void setArchivecover(String archivecover)
+    {
+        this.archivecover = archivecover;
+    }
+
+    public String getArchivedate()
+    {
+        return archivedate;
+    }
+
+    public void setArchivedate(String archivedate)
+    {
+        this.archivedate = archivedate;
+    }
+
+    public String getCoverbyline()
+    {
+        return coverbyline;
+    }
+
+    public void setCoverbyline(String coverbyline)
+    {
+        this.coverbyline = coverbyline;
+    }
+
+    public String getCoverKicker()
+    {
+        return coverKicker;
+    }
+
+    public void setCoverKicker(String coverKicker)
+    {
+        this.coverKicker = coverKicker;
+    }
+
+    public String getCovertitle()
+    {
+        return covertitle;
+    }
+
+    public void setCovertitle(String covertitle)
+    {
+        this.covertitle = covertitle;
+    }
+
+    public int getCoverartid()
+    {
+        return coverartid;
+    }
+
+    public void setCoverartid(int coverartid)
+    {
+        this.coverartid = coverartid;
+    }
+
+    public int getArchivearticleid()
+    {
+        return archivearticleid;
+    }
+
+    public void setArchivearticleid(int archivearticleid)
+    {
+        this.archivearticleid = archivearticleid;
+    }
+
+    public int getArchivesectionid()
+    {
+        return archivesectionid;
+    }
+
+    public void setArchivesectionid(int archivesectionid)
+    {
+        this.archivesectionid = archivesectionid;
+    }
+
+    public String getArchivesectionname()
+    {
+        return archivesectionname;
+    }
+
+    public void setArchivesectionname(String archivesectionname)
+    {
+        this.archivesectionname = archivesectionname;
+    }
+
+    public String getArchivesectionbyline()
+    {
+        return archivesectionbyline;
+    }
+
+    public void setArchivesectionbyline(String archivesectionbyline)
+    {
+        this.archivesectionbyline = archivesectionbyline;
+    }
+
+    public String getArchivetitle()
+    {
+        return archivetitle;
+    }
+
+    public void setArchivetitle(String archivetitle)
+    {
+        this.archivetitle = archivetitle;
+    }
+
+    public String getArchivekicker()
+    {
+        return archivekicker;
+    }
+
+    public void setArchivekicker(String archivekicker)
+    {
+        this.archivekicker = archivekicker;
+    }
+
+    public String getCoverImage()
+    {
+        return coverImage;
+    }
+
+    public void setCoverImage(String coverImage)
+    {
+        this.coverImage = coverImage;
+    }
+
+    public int getIssueId()
+    {
+        return issueId;
+    }
+
+    public void setIssueId(int issueId)
+    {
+        this.issueId = issueId;
+    }
+
+    public String getIssueDate()
+    {
+        return issueDate;
+    }
+
+    public void setIssueDate(String issueDate)
+    {
+        this.issueDate = issueDate;
+    }
+
+    public int getIssueCount()
+    {
+        return issueCount;
+    }
+
+    public void setIssueCount(int issueCount)
+    {
+        this.issueCount = issueCount;
+    }
+
+    public String getSefUrl()
+    {
+        return sefUrl;
+    }
+
+    public void setSefUrl(String sefUrl)
+    {
+        this.sefUrl = sefUrl;
+    }
+
+    public String getKickerImage()
+    {
+        return kickerImage;
+    }
+
+    public void setKickerImage(String kickerImage)
+    {
+        this.kickerImage = kickerImage;
+    }
+
+    public String getKickerImageAltText()
+    {
+        return kickerImageAltText;
+    }
+
+    public void setKickerImageAltText(String kickerImageAltText)
+    {
+        this.kickerImageAltText = kickerImageAltText;
+    }
+
+    public String getLargeKickerImage()
+    {
+        return largeKickerImage;
+    }
+
+    public void setLargeKickerImage(String largeKickerImage)
+    {
+        this.largeKickerImage = largeKickerImage;
+    }
+
+    public String getSmallImage()
+    {
+        return smallImage;
+    }
+
+    public void setSmallImage(String smallImage)
+    {
+        this.smallImage = smallImage;
+    }
+
+    public String getLargeKickerImageCaption()
+    {
+        return largeKickerImageCaption;
+    }
+
+    public void setLargeKickerImageCaption(String largeKickerImageCaption)
+    {
+        this.largeKickerImageCaption = largeKickerImageCaption;
+    }
+
+    public int getContentHighlighted()
+    {
+        return contentHighlighted;
+    }
+
+    public void setContentHighlighted(int contentHighlighted)
+    {
+        this.contentHighlighted = contentHighlighted;
+    }
+
+    public int getContentLocked()
+    {
+        return contentLocked;
+    }
+
+    public void setContentLocked(int contentLocked)
+    {
+        this.contentLocked = contentLocked;
+    }
+
+    public String getExtraLargeKickerImage()
+    {
+        return extraLargeKickerImage;
+    }
+
+    public void setExtraLargeKickerImage(String extraLargeKickerImage)
+    {
+        this.extraLargeKickerImage = extraLargeKickerImage;
+    }
+
+	public void setContentUrl(String contentUrl) {
+		this.contentUrl = contentUrl;
+	}
+
+	public String getContentUrl() {
+		return contentUrl;
+	}
+}

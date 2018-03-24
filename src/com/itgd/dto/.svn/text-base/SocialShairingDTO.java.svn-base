@@ -1,0 +1,106 @@
+package com.itgd.dto;
+
+import java.io.Serializable;
+
+public class SocialShairingDTO
+  implements Serializable
+{
+  private int articleId = 0;
+  private String website = "";
+  private String contentType = "";
+  private int stumbleupon = 0;
+  private int googleplusone = 0;
+  private int twitter = 0;
+  private int pinterest = 0;
+  private int linkedin = 0;
+  private int fb_commentsbox_count = 0;
+  private int fb_click_count = 0;
+  private int fb_total_count = 0;
+  private int fb_comment_count = 0;
+  private int fb_like_count = 0;
+  private int fb_share_count = 0;
+
+  public int getStumbleupon() { return this.stumbleupon; }
+
+  public void setStumbleupon(int stumbleupon) {
+    this.stumbleupon = stumbleupon;
+  }
+  public int getGoogleplusone() {
+    return this.googleplusone;
+  }
+  public void setGoogleplusone(int googleplusone) {
+    this.googleplusone = googleplusone;
+  }
+  public int getTwitter() {
+    return this.twitter;
+  }
+  public void setTwitter(int twitter) {
+    this.twitter = twitter;
+  }
+  public int getPinterest() {
+    return this.pinterest;
+  }
+  public void setPinterest(int pinterest) {
+    this.pinterest = pinterest;
+  }
+  public int getLinkedin() {
+    return this.linkedin;
+  }
+  public void setLinkedin(int linkedin) {
+    this.linkedin = linkedin;
+  }
+  public int getFb_commentsbox_count() {
+    return this.fb_commentsbox_count;
+  }
+  public void setFb_commentsbox_count(int fbCommentsboxCount) {
+    this.fb_commentsbox_count = fbCommentsboxCount;
+  }
+  public int getFb_click_count() {
+    return this.fb_click_count;
+  }
+  public void setFb_click_count(int fbClickCount) {
+    this.fb_click_count = fbClickCount;
+  }
+  public int getFb_total_count() {
+    return this.fb_total_count;
+  }
+  public void setFb_total_count(int fbTotalCount) {
+    this.fb_total_count = fbTotalCount;
+  }
+  public int getFb_comment_count() {
+    return this.fb_comment_count;
+  }
+  public void setFb_comment_count(int fbCommentCount) {
+    this.fb_comment_count = fbCommentCount;
+  }
+  public int getFb_like_count() {
+    return this.fb_like_count;
+  }
+  public void setFb_like_count(int fbLikeCount) {
+    this.fb_like_count = fbLikeCount;
+  }
+  public int getFb_share_count() {
+    return this.fb_share_count;
+  }
+  public void setFb_share_count(int fbShareCount) {
+    this.fb_share_count = fbShareCount;
+  }
+  public int getArticleId() {
+    return this.articleId;
+  }
+  public void setArticleId(int articleId) {
+    this.articleId = articleId;
+  }
+  public String getWebsite() {
+    return this.website;
+  }
+  public void setWebsite(String website) {
+    this.website = website;
+  }
+  public String getContentType() {
+    return this.contentType;
+  }
+  public void setContentType(String contentType) {
+    this.contentType = contentType;
+  }
+}

@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+<filter>
+	<filter-name>UrlRewriteFilter</filter-name>  
+	<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+</filter>  
+<filter-mapping>         
+	<filter-name>UrlRewriteFilter</filter-name>       
+	<url-pattern>/*</url-pattern>       
+</filter-mapping>         
+<servlet>                                 
+	<servlet-name>ITHome</servlet-name>            
+    <servlet-class>com.itgd.content.IndiaTodayHome</servlet-class>
+</servlet>
+<servlet-mapping> 
+	<servlet-name>ITHome</servlet-name>  
+    <url-pattern>/home</url-pattern>
+</servlet-mapping> 
+<!--   NLP Captcha TLD Configuration Start -->
+         <jsp-config> 
+           <taglib> 
+              <taglib-uri>nlpcaptcha</taglib-uri>
+            <taglib-location>/WEB-INF/nlpcaptcha-tag.tld</taglib-location>
+        </taglib>
+    </jsp-config> 
+
+     <!--   NLP Captcha TLD Configuration End -->
+<!--Story Settings--> 
+
+<servlet>
+	<servlet-name>StoryPreviewServlet</servlet-name>
+    <servlet-class>com.itgd.content.StoryPreviewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>StoryPreviewServlet</servlet-name>
+    <url-pattern>/storypreview/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>StoryServlet</servlet-name>
+    <servlet-class>com.itgd.content.StoryServlet</servlet-class>
+</servlet>
+  <servlet>
+    <servlet-name>VideoServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GeneralCommentServlet</servlet-name>
+    <servlet-class>com.itgd.content.GeneralCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.itgd.content.CommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentListServlet</servlet-name>
+    <servlet-class>com.itgd.content.CommentListServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ArticleCommentServlet</servlet-name>
+    <servlet-class>com.itgd.content.ArticleCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VideoListServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VideoSectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.VideoSectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GalleryServlet</servlet-name>
+    <servlet-class>com.itgd.content.GalleryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GalleryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.GalleryListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GallerySectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.GallerySectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.SectionServlet</servlet-class>
+  </servlet>   
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.itgd.content.CategoryServlet</servlet-class>
+  </servlet>     
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YearsAgoServlet</servlet-name>
+    <servlet-class>com.itgd.content.YearsAgoServlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>StoryServlet</servlet-name>
+    <url-pattern>/story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>StoryServlet</servlet-name>
+    <url-pattern>/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>StoryServlet</servlet-name>
+    <url-pattern>/story</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>StoryServlet</servlet-name>
+    <url-pattern>/article/*</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VideoServlet</servlet-name>
+    <url-pattern>/video/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	<servlet-name>VideoServlet</servlet-name>
+    <url-pattern>/video_page.jsp</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>VideoServlet</servlet-name>
+    <url-pattern>/Video/*</url-pattern>
+</servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GeneralCommentServlet</servlet-name>
+    <url-pattern>/generalcomment/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/comment/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentListServlet</servlet-name>
+    <url-pattern>/commentlist/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VideoListServlet</servlet-name>
+    <url-pattern>/videolist/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VideoSectionServlet</servlet-name>
+    <url-pattern>/videos</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GalleryServlet</servlet-name>
+    <url-pattern>/gallery/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GalleryServlet</servlet-name>
+    <url-pattern>/Photo/*</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GalleryServlet</servlet-name>
+    <url-pattern>/PhotoGallery</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GalleryListServlet</servlet-name>
+    <url-pattern>/gallerylist/*</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>GalleryListServlet</servlet-name>
+    <url-pattern>/MoreGallery</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>GalleryListServlet</servlet-name>
+    <url-pattern>/photo/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GallerySectionServlet</servlet-name>
+    <url-pattern>/galleries/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SectionServlet</servlet-name>
+    <url-pattern>/section/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/category/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YearsAgoServlet</servlet-name>
+    <url-pattern>/ThirtyYearsInIT</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>ArticleCommentServlet</servlet-name>
+    <url-pattern>/ArticleComment</url-pattern>
+  </servlet-mapping>
+
+
+<!--Headlines Today Settings-->
+<!--<servlet><servlet-name>HeadlinesTodayHome</servlet-name><servlet-class>com.itgd.HeadlinesToday.HeadlinesTodayHomeServlet</servlet-class></servlet>
+<servlet-mapping><servlet-name>HeadlinesTodayHome</servlet-name><url-pattern>/headlines_today/home</url-pattern></servlet-mapping>-->
+<servlet>
+	<servlet-name>HeadlinesTodayHome</servlet-name>
+	<servlet-class>com.itgd.content.HeadlinesTodayHome</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>HeadlinesTodayHome</servlet-name>
+	<url-pattern>/headlines_today/home</url-pattern>
+</servlet-mapping>
+
+<!--<servlet><servlet-name>Programm</servlet-name><servlet-class>com.itgd.HeadlinesToday.Programm</servlet-class></servlet>
+<servlet-mapping><servlet-name>Programm</servlet-name><url-pattern>/headlines_today/programm/*</url-pattern></servlet-mapping>
+<servlet><servlet-name>HeadlinesTodayProgrammes</servlet-name><servlet-class>com.itgd.HeadlinesToday.ProgrammesServlet</servlet-class></servlet>
+<servlet-mapping><servlet-name>HeadlinesTodayProgrammes</servlet-name><url-pattern>/headlines_today/HeadlinesTodayProgrammes</url-pattern></servlet-mapping>
+<servlet><servlet-name>HeadlinesTodayProgrammesShow</servlet-name><servlet-class>com.itgd.HeadlinesToday.ShowProgrammesServlet</servlet-class></servlet>
+<servlet-mapping><servlet-name>HeadlinesTodayProgrammesShow</servlet-name><url-pattern>/headlines_today/ProgrammesShow</url-pattern></servlet-mapping>
+<servlet><servlet-name>Programm</servlet-name><servlet-class>com.itgd.content.ProgrammeServlet</servlet-class></servlet>-->
+<servlet>
+    <servlet-name>ProgrammeServlet</servlet-name>
+    <servlet-class>com.itgd.content.ProgrammeServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>ProgrammeServlet</servlet-name>
+	<url-pattern>/headlines_today/programm/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ProgrammeServlet</servlet-name>
+    <url-pattern>/headlines_today/programme/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ProgrammeServlet</servlet-name>
+	<url-pattern>/headlines_today/ProgrammesShow</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>ProgrammeListingServlet</servlet-name>
+    <servlet-class>com.itgd.content.ProgrammeListServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>ProgrammeListingServlet</servlet-name>
+    <url-pattern>/headlines_today/programmelist/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ProgrammesSectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.ProgrammesSectionServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+    <servlet-name>ProgrammesSectionServlet</servlet-name>
+    <url-pattern>/headlines_today/programmes</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>ProgrammesSectionServlet</servlet-name>
+  <url-pattern>/headlines_today/HeadlinesTodayProgrammes</url-pattern>	
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>ProgrammesSectionServlet</servlet-name>
+	<url-pattern>/programmes</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+	<servlet-name>ProgrammeServlet</servlet-name>
+	<url-pattern>/programme/*</url-pattern>
+</servlet-mapping>
+
+
+
+ <servlet-mapping>
+	<servlet-name>ProgrammeListingServlet</servlet-name>
+	<url-pattern>/programmelist/*</url-pattern>
+</servlet-mapping>
+
+<!--<servlet><servlet-name>ProgrammesAnchorsSection</servlet-name><servlet-class>com.itgd.HeadlinesToday.AnchorsServlet</servlet-class></servlet>
+<servlet-mapping><servlet-name>ProgrammesAnchorsSection</servlet-name><url-pattern>/headlines_today/ProgrammesAnchorsSection</url-pattern></servlet-mapping>
+<servlet><servlet-name>ProgrammesAnchorsStory</servlet-name><servlet-class>com.itgd.HeadlinesToday.AnchorsStoryServlet</servlet-class></servlet>
+<servlet-mapping><servlet-name>ProgrammesAnchorsStory</servlet-name><url-pattern>/headlines_today/ProgrammesAnchorsStory</url-pattern></servlet-mapping>-->
+<servlet>
+	<servlet-name>AnchorsSectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.AnchorsSectionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AnchorsSectionServlet</servlet-name>
+    <url-pattern>/headlines_today/anchors</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AnchorsSectionServlet</servlet-name>
+	<url-pattern>/headlines_today/ProgrammesAnchorsSection</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AnchorServlet</servlet-name>
+    <servlet-class>com.itgd.content.AnchorServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AnchorServlet</servlet-name>
+    <url-pattern>/headlines_today/anchor/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AnchorServlet</servlet-name>
+	<url-pattern>/headlines_today/ProgrammesAnchorsStory</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>AnchorServlet</servlet-name>
+	<url-pattern>/anchor/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>AnchorsSectionServlet</servlet-name>
+	<url-pattern>/anchors</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SubCategoryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.SubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SubCategoryListServlet</servlet-name>
+    <url-pattern>/subcategory/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SubCategory</servlet-name>
+	<servlet-class>com.itgd.content.SubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SubCategory</servlet-name>
+	<url-pattern>/subcategory</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+	<servlet-name>SubSubCategoryListServlet</servlet-name>
+    <servlet-class>com.itgd.content.SubSubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SubSubCategoryListServlet</servlet-name>
+    <url-pattern>/subsubcategory/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SubSubCategory</servlet-name>
+	<servlet-class>com.itgd.content.SubSubCategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SubSubCategory</servlet-name>
+	<url-pattern>/subsubcategory</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Calender</servlet-name>
+    <servlet-class>com.itgd.content.Calender</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Calender</servlet-name>
+    <url-pattern>/calendar/*</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+	<servlet-name>news</servlet-name>
+	<jsp-file>/news.jsp</jsp-file>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartoonServlet</servlet-name>
+    <servlet-class>com.itgd.content.CartoonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartoonListServlet</servlet-name>
+    <servlet-class>com.itgd.content.CartoonListServlet</servlet-class>
+  </servlet>
+
+
+  	<servlet-mapping>
+	<servlet-name>news</servlet-name>
+	<url-pattern>/news.html</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartoonServlet</servlet-name>
+    <url-pattern>/Cartoon</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartoonListServlet</servlet-name>
+    <url-pattern>/cartoonlist/*</url-pattern>
+  </servlet-mapping>
+
+
+
+
+ <servlet>
+    <servlet-name>ArchiveData</servlet-name>
+    <servlet-class>com.itgd.content.ArchiveData</servlet-class>
+  </servlet>
+
+<servlet>
+<servlet-name>Issue</servlet-name>
+<servlet-class>com.itgd.content.Issue</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>ArchiveData</servlet-name>
+    <url-pattern>/archive</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet-mapping>
+    <servlet-name>Issue</servlet-name>
+    <url-pattern>/Issue</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SimplyServlet</servlet-name>
+    <servlet-class>com.itgd.content.SimplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SimplyServlet</servlet-name>
+    <url-pattern>/Simply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SimplyServlet</servlet-name>
+    <url-pattern>/simply/*</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<servlet-class>com.itgd.content.StoryServletOldSpecials</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/cwg/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/missworld/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/budget/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/fihworldcup2010/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/ipl2010/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/t20worldcup/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/asiacup2010/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/championsleague2010/Story/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>StoryServletOldSpecials</servlet-name>
+	<url-pattern>/specials/asiangames2010/Story/*</url-pattern>
+</servlet-mapping>
+  <servlet>
+	<servlet-name>PeopleServlet</servlet-name>
+	<servlet-class>com.itgd.content.PeopleServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>PeopleServlet</servlet-name>
+	<url-pattern>/people/*</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>AkbarKaDurbarSectionServlet</servlet-name>
+	<servlet-class>com.itgd.content.AskQuestionSectionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>AkbarKaDurbarSectionServlet</servlet-name>
+	<url-pattern>/akbar-ka-durbar</url-pattern>
+</servlet-mapping>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SpecialSectionServlet</servlet-name>
+    <servlet-class>com.itgd.content.SpecialSectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpecialSectionServlet</servlet-name>
+    <url-pattern>/itspecials/*</url-pattern>
+  </servlet-mapping>
+
+<servlet>  
+    <servlet-name>slideshowsServlet</servlet-name>
+    <jsp-file>/slideshows/index.jsp</jsp-file>
+            </servlet>
+                        <servlet-mapping>
+    <servlet-name>slideshowsServlet</servlet-name>
+    <url-pattern>/slideshows</url-pattern>
+            </servlet-mapping>
+            <servlet-mapping> 
+    <servlet-name>slideshowsServlet</servlet-name>
+    <url-pattern>/slideshows/*</url-pattern>
+            </servlet-mapping>
+
+<!--education related entries STARTS here-->
+<servlet>
+	<servlet-name>StoryPreviewServletEducation</servlet-name>
+	<servlet-class>com.itgd.education.content.StoryPreviewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>StoryPreviewServletEducation</servlet-name>
+	<url-pattern>/education/storypreview/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>StoryServletEducation</servlet-name>
+	<servlet-class>com.itgd.education.content.StoryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>StoryServletEducation</servlet-name>
+	<url-pattern>/education/story/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>CategoryServletEducation</servlet-name>
+	<servlet-class>com.itgd.education.content.CategoryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CategoryServletEducation</servlet-name>
+	<url-pattern>/education/category/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>CategoryListServletEducation</servlet-name>
+	<servlet-class>com.itgd.education.content.CategoryListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CategoryListServletEducation</servlet-name>
+	<url-pattern>/education/categorylist/*</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SubCategoryServletEducation</servlet-name>
+	<servlet-class>com.itgd.education.content.SubCategoryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SubCategoryServletEducation</servlet-name>
+	<url-pattern>/education/subcategory/*</url-pattern>
+</servlet-mapping>
+<!--education related entries ENDS here-->
+<servlet>
+	<servlet-name>breakingnews</servlet-name>
+	<jsp-file>/breakingnews.jsp</jsp-file>
+	</servlet>	
+<servlet-mapping>
+	<servlet-name>breakingnews</servlet-name>
+	<url-pattern>/breakingnews.html</url-pattern>
+	</servlet-mapping>
+  <servlet>
+	<servlet-name>author</servlet-name>
+	<jsp-file>/author.jsp</jsp-file>
+	</servlet>
+
+<servlet-mapping>
+	<servlet-name>author</servlet-name>
+	<url-pattern>/author/*</url-pattern>
+	</servlet-mapping>
+
+	  <servlet>
+	<servlet-name>megareviewlist</servlet-name>
+	<jsp-file>/megareviewlist.jsp</jsp-file>
+	</servlet>
+	
+
+<servlet-mapping>
+	<servlet-name>megareviewlist</servlet-name>
+	<url-pattern>/megareviewlist/*</url-pattern>
+	</servlet-mapping>
+<!--Tech related entries STARTS here-->
+<servlet>
+<servlet-name>techstory</servlet-name>
+	<jsp-file>/technology/story.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>techstory</servlet-name>
+	<url-pattern>/technology/story/*</url-pattern>
+	</servlet-mapping>
+  	<servlet>
+  <servlet-name>techcategory</servlet-name>
+	<jsp-file>/technology/category.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>techcategory</servlet-name>
+	<url-pattern>/technology/category/*</url-pattern>
+	</servlet-mapping>
+	
+	  	<servlet>
+  <servlet-name>techsection</servlet-name>
+	<jsp-file>/technology/section.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>techsection</servlet-name>
+	<url-pattern>/technology/section/*</url-pattern>
+	</servlet-mapping>
+<servlet>
+  <servlet-name>techgallery</servlet-name>
+                <jsp-file>/technology/gallery.jsp</jsp-file>
+                </servlet>
+                <servlet-mapping>
+                <servlet-name>techgallery</servlet-name>
+                <url-pattern>/technology/gallery/*</url-pattern>
+                </servlet-mapping>
+				
+<servlet>
+<servlet-name>technologyvideosection</servlet-name>
+	<jsp-file>/technology/videosection.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>technologyvideosection</servlet-name>
+	<url-pattern>/technology/videos/*</url-pattern>
+	</servlet-mapping>
+<servlet>
+<servlet-name>technologyvideo</servlet-name>
+	<jsp-file>/technology/video.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>technologyvideo</servlet-name>
+	<url-pattern>/technology/video/*</url-pattern>
+	</servlet-mapping>				
+<servlet>
+<servlet-name>technologyhotproducts</servlet-name>
+	<jsp-file>/technology/hotproducts.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>technologyhotproducts</servlet-name>
+	<url-pattern>/technology/hotproducts/*</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+<servlet-name>technologysearch</servlet-name>
+	<jsp-file>/technology/advanced_technologysearch.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>technologysearch</servlet-name>
+	<url-pattern>/technology/search/*</url-pattern>
+	</servlet-mapping>	
+	
+	
+<!--Tech related entries ENDS here-->
+
+<!-- Indiatoday Money Implementation -->
+  	<servlet>
+		<servlet-name>MoneyStoryServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneyStoryServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneyStoryServlet</servlet-name>
+		<url-pattern>/money/story/*</url-pattern>     
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoneyStoryListServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneyStoryListServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneyStoryListServlet</servlet-name>
+		<url-pattern>/money/category/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoneySectionServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneySectionServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneySectionServlet</servlet-name>
+		<url-pattern>/money/section/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoneyVideoServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneyVideoServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneyVideoServlet</servlet-name>
+		<url-pattern>/money/video/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoneyVideoListServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneyVideoListServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneyVideoListServlet</servlet-name>
+		<url-pattern>/money/videolist/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoneyVideoSectionServlet</servlet-name>
+		<servlet-class>com.itgd.money.content.MoneyVideoSectionServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MoneyVideoSectionServlet</servlet-name>
+		<url-pattern>/money/videos/</url-pattern>
+	</servlet-mapping>
+	 <servlet-mapping>
+		<servlet-name>MoneyVideoSectionServlet</servlet-name>
+		<url-pattern>/money/videos</url-pattern>
+	</servlet-mapping> 
+	
+	<!--	End Indiatoday Money Implementation -->
+	
+	<!-- code for Auto page -->
+<servlet>
+ <servlet-name>autogallery</servlet-name>
+	<jsp-file>/auto/gallery.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>autogallery</servlet-name>
+	<url-pattern>/auto/gallery/*</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+<servlet-name>autovideo</servlet-name>
+	<jsp-file>/auto/video.jsp</jsp-file>
+	</servlet>
+<servlet-mapping>
+	<servlet-name>autovideo</servlet-name>
+	<url-pattern>/auto/video/*</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+<servlet-name>autostory</servlet-name>
+	<jsp-file>/auto/story.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>autostory</servlet-name>
+	<url-pattern>/auto/story/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>autosection</servlet-name>
+	<jsp-file>/auto/section.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>autosection</servlet-name>
+	<url-pattern>/auto/section/*</url-pattern>
+	</servlet-mapping>	
+
+<servlet>
+<servlet-name>autocategory</servlet-name>
+	<jsp-file>/auto/category.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>autocategory</servlet-name>
+	<url-pattern>/auto/category/*</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+<servlet-name>autovideolist</servlet-name>
+	<jsp-file>/auto/videolist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>autovideolist</servlet-name>
+	<url-pattern>/auto/videos/*</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+<servlet-name>autoroadtrip</servlet-name>
+	<jsp-file>/auto/auto-road-trips.jsp</jsp-file>
+	</servlet>
+	
+ <servlet-mapping>
+    <servlet-name>autoroadtrip</servlet-name>
+    <url-pattern>/auto/road-trips</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>autoroadtrip</servlet-name>
+    <url-pattern>/auto/road-trips/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+<servlet-name>autogallerylist</servlet-name>
+	<jsp-file>/auto/gallerylist.jsp</jsp-file>
+	</servlet>
+	
+ <servlet-mapping>
+    <servlet-name>autogallerylist</servlet-name>
+    <url-pattern>/auto/photos</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>autogallerylist</servlet-name>
+    <url-pattern>/auto/photos/</url-pattern>
+  </servlet-mapping>
+
+
+
+ <servlet>
+<servlet-name>autovintagelist</servlet-name>
+	<jsp-file>/auto/vintagelist.jsp</jsp-file>
+	</servlet>
+	
+ <servlet-mapping>
+    <servlet-name>autovintagelist</servlet-name>
+    <url-pattern>/auto/vintage-cars</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>autovintagelist</servlet-name>
+    <url-pattern>/auto/vintage-cars/</url-pattern>
+  </servlet-mapping>
+<servlet>
+		<servlet-name>autosearch</servlet-name>
+		<jsp-file>/auto/advanced_autosearch.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>autosearch</servlet-name>
+		<url-pattern>/auto/search/*</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>autositemap</servlet-name>
+	<servlet-class>com.itgd.sitemap.generator.AutoSitemapGenerator</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>autositemap</servlet-name>
+	<url-pattern>/auto/sitemap.jsp</url-pattern>
+</servlet-mapping>
+
+
+
+<!--Auto related entries ENDS here-->
+
+<!--Welcome and miscelaneous-->
+ <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+ <error-page>
+    <error-code>404</error-code>
+    <location>/pagenotfound.jsp</location>
+  </error-page>
+  
+</web-app>
